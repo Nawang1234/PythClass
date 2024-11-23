@@ -1,0 +1,45 @@
+ax.set_title:
+
+Sets the title for the plot.
+Example: ax.set_title('My Plot Title') places the title above the plot.
+ax.legend:
+
+Displays a legend on the plot for labeled elements.
+Example: ax.legend() shows labels for different plotted elements like lines or markers.
+ax.xaxis.set_major_locator & ax.yaxis.set_major_locator:
+
+Sets where major ticks (main axis ticks) appear on the x or y axis.
+Example: ax.xaxis.set_major_locator(plt.MaxNLocator(5)) sets 5 major ticks.
+ax.xaxis.set_minor_locator & ax.yaxis.set_minor_locator:
+
+Defines where minor ticks (smaller ticks) appear between major ticks on the x or y axis.
+Example: ax.xaxis.set_minor_locator(plt.AutoMinorLocator()) places minor ticks automatically.
+ax.scatter:
+
+Creates a scatter plot (dots) to visualize individual data points.
+Example: ax.scatter(x, y) plots the points at the coordinates specified by x and y.
+ax.plot:
+
+Plots a continuous line graph.
+Example: ax.plot(x, y) draws a line that connects the data points defined by x and y.
+fig, ax = plt.subplots():
+
+Creates a figure and a set of subplots (axes) to plot on.
+Example: fig, ax = plt.subplots() initializes the canvas for plotting.
+ax.spines:
+
+Customizes the plot’s borders (spines) around the graph.
+Example: ax.spines['top'].set_visible(False) hides the top border of the plot.
+ax.set_xlabel & ax.set_ylabel:
+
+Sets labels for the x and y axes.
+Example: ax.set_xlabel('X Axis Label') labels the x-axis.
+plt.subplot:
+
+Used to create multiple subplots in a single figure.
+Example: plt.subplot(2, 1, 1) creates a subplot in a 2x1 grid (2 rows, 1 column) and accesses the first subplot.
+subplot.mosaic:
+
+A more flexible way to arrange subplots in a figure by defining a layout using a string or list.
+Example: fig, axd = plt.subplot_mosaic([['A', 'B'], ['C', 'B']]) creates a mosaic layout where subplot 'B' spans across both rows.
+"""
